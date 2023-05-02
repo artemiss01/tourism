@@ -4733,7 +4733,6 @@
             observer: !0,
             observeParents: !0,
             slidesPerView: 1,
-            spaceBetween: 5,
             speed: 800,
             parallax: !0,
             keyboard: { invert: !0 },
@@ -4870,18 +4869,17 @@
           document.dispatchEvent(e);
         });
       }
-    }, 0);
-    const be = document.getElementsByTagName("body")[0];
-    let Se = document.querySelector(".preloader");
-    be && be.classList.add("lock"),
-      (window.onload = function () {
-        Se &&
-          (Se.classList.add("hide-preloader"),
-          setInterval(function () {
-            Se.classList.add("preloader-hidden");
-          }, 990)),
-          be.classList.remove("lock");
-      }),
+    }, 0),
+      document.documentElement.classList.add("lock");
+    let be = document.querySelector(".preloader");
+    (window.onload = function () {
+      be &&
+        (be.classList.add("hide-preloader"),
+        setInterval(function () {
+          be.classList.add("preloader-hidden");
+        }, 990)),
+        document.documentElement.classList.remove("lock");
+    }),
       (window.FLS = !0),
       (function (e) {
         let t = new Image();
