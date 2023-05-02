@@ -273,7 +273,7 @@ h6 {
   justify-content: center;
   align-items: center;
   background-color: #0B1D26;
-  z-index: 110;
+  z-index: 200;
   transition: opacity 1s ease;
 }
 .preloader.hide-preloader {
@@ -724,11 +724,11 @@ h6 {
 .slide-bg-hero__img_human {
   top: 45%;
   z-index: 4;
-  background: url("../img/hero-bg/bg-bottom.png") top/cover no-repeat;
+  background: url("../img/hero-bg/bg-bottom.png") -200px top/cover no-repeat;
 }
-@media (max-aspect-ratio: 3/2) {
+@media (max-aspect-ratio: 2/3) {
   .slide-bg-hero__img_human {
-    background-position: 25% top;
+    background-position: -200px top;
   }
 }
 .txt-block-hero {
